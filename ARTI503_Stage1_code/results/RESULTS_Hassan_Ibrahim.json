@@ -1,0 +1,521 @@
+{
+  "schema": 1,
+  "member": "Hassan_Ibrahim",
+  "timestamp": "2026-10-17 14:18:36",
+  "system": {
+    "os": "Windows 11",
+    "os_version": "10.0.26200",
+    "architecture": "AMD64",
+    "cpu_model": "Intel(R) Core(TM) Ultra 7 258V",
+    "physical_cores": 8,
+    "logical_cores": 8,
+    "max_freq_mhz": 2200,
+    "ram_gb": 31.5,
+    "on_ac_power": false,
+    "python": "CPython 3.14.2",
+    "numpy": "2.5.4"
+  },
+  "settings": {
+    "shingle_size": 5,
+    "num_perm": 128,
+    "bands": 32,
+    "rows": 4,
+    "jaccard_threshold": 0.5,
+    "prime": 4294967291,
+    "seed": 503,
+    "gc_disabled_during_runs": true,
+    "threads": 1
+  },
+  "data": {
+    "n_docs": 100000,
+    "corpus_sha256": "d19bfab0e2b433f75a2f03521cd4675620e91e0af67dfa85cefef8c1d91d4b79",
+    "source": "FineWeb-2 (HuggingFaceFW/fineweb-2, arb_Arab), Common Crawl derived, ODC-By"
+  },
+  "plan": [
+    {
+      "docs": 1000,
+      "repeats": 5
+    },
+    {
+      "docs": 10000,
+      "repeats": 5
+    },
+    {
+      "docs": 50000,
+      "repeats": 5
+    },
+    {
+      "docs": 100000,
+      "repeats": 3
+    }
+  ],
+  "sizes": [
+    {
+      "docs": 1000,
+      "repeats": 5,
+      "runs": [
+        {
+          "times": {
+            "normalize": 0.547746,
+            "shingle": 0.782694,
+            "minhash": 1.386901,
+            "lsh": 0.009041,
+            "candidates": 0.002216,
+            "verify": 0.004849,
+            "cluster": 0.000143
+          },
+          "total": 2.733591,
+          "wall": 2.738848
+        },
+        {
+          "times": {
+            "normalize": 0.379251,
+            "shingle": 0.550156,
+            "minhash": 1.15503,
+            "lsh": 0.009446,
+            "candidates": 0.002566,
+            "verify": 0.003754,
+            "cluster": 0.00013
+          },
+          "total": 2.100334,
+          "wall": 2.103891
+        },
+        {
+          "times": {
+            "normalize": 0.339977,
+            "shingle": 0.489067,
+            "minhash": 1.079505,
+            "lsh": 0.006867,
+            "candidates": 0.001866,
+            "verify": 0.005706,
+            "cluster": 0.000155
+          },
+          "total": 1.923144,
+          "wall": 1.926046
+        },
+        {
+          "times": {
+            "normalize": 0.353931,
+            "shingle": 0.533759,
+            "minhash": 1.138276,
+            "lsh": 0.007459,
+            "candidates": 0.001974,
+            "verify": 0.004699,
+            "cluster": 0.000144
+          },
+          "total": 2.040241,
+          "wall": 2.04282
+        },
+        {
+          "times": {
+            "normalize": 0.336421,
+            "shingle": 0.486991,
+            "minhash": 1.08083,
+            "lsh": 0.007143,
+            "candidates": 0.00192,
+            "verify": 0.003952,
+            "cluster": 0.000133
+          },
+          "total": 1.917392,
+          "wall": 1.9199
+        }
+      ],
+      "total_mean": 2.14294,
+      "total_std": 0.339269,
+      "total_min": 1.917392,
+      "total_max": 2.733591,
+      "stage_mean": {
+        "normalize": 0.391465,
+        "shingle": 0.568533,
+        "minhash": 1.168108,
+        "lsh": 0.007991,
+        "candidates": 0.002108,
+        "verify": 0.004592,
+        "cluster": 0.000141
+      },
+      "stage_std": {
+        "normalize": 0.08897,
+        "shingle": 0.122857,
+        "minhash": 0.126885,
+        "lsh": 0.001171,
+        "candidates": 0.000289,
+        "verify": 0.000779,
+        "cluster": 1e-05
+      },
+      "stage_share_pct": {
+        "normalize": 18.27,
+        "shingle": 26.53,
+        "minhash": 54.51,
+        "lsh": 0.37,
+        "candidates": 0.1,
+        "verify": 0.21,
+        "cluster": 0.01
+      },
+      "stats": {
+        "docs": 1000,
+        "empty_docs": 0,
+        "shingles": 800690,
+        "buckets": 30661,
+        "max_bucket": 22,
+        "candidates": 662,
+        "verified_pairs": 113,
+        "clusters": 89,
+        "docs_in_clusters": 190,
+        "sig_checksum": 2102806897,
+        "edge_checksum": 1094513509
+      },
+      "accuracy": {
+        "true_pairs": 113,
+        "predicted_pairs": 114,
+        "correct_pairs": 113,
+        "precision": 0.9912280701754386,
+        "recall": 1.0
+      }
+    },
+    {
+      "docs": 10000,
+      "repeats": 5,
+      "runs": [
+        {
+          "times": {
+            "normalize": 3.731952,
+            "shingle": 5.445206,
+            "minhash": 12.116872,
+            "lsh": 0.081073,
+            "candidates": 0.021607,
+            "verify": 0.028783,
+            "cluster": 0.001542
+          },
+          "total": 21.427035,
+          "wall": 21.454146
+        },
+        {
+          "times": {
+            "normalize": 3.796032,
+            "shingle": 5.490557,
+            "minhash": 12.256449,
+            "lsh": 0.074823,
+            "candidates": 0.020235,
+            "verify": 0.031916,
+            "cluster": 0.001461
+          },
+          "total": 21.671473,
+          "wall": 21.700052
+        },
+        {
+          "times": {
+            "normalize": 4.001606,
+            "shingle": 5.854988,
+            "minhash": 12.87533,
+            "lsh": 0.081567,
+            "candidates": 0.023213,
+            "verify": 0.032394,
+            "cluster": 0.001393
+          },
+          "total": 22.870491,
+          "wall": 22.898997
+        },
+        {
+          "times": {
+            "normalize": 3.852753,
+            "shingle": 5.580761,
+            "minhash": 11.989186,
+            "lsh": 0.109936,
+            "candidates": 0.029988,
+            "verify": 0.031492,
+            "cluster": 0.001366
+          },
+          "total": 21.595481,
+          "wall": 21.626884
+        },
+        {
+          "times": {
+            "normalize": 3.655639,
+            "shingle": 5.301651,
+            "minhash": 11.715382,
+            "lsh": 0.086596,
+            "candidates": 0.022591,
+            "verify": 0.031418,
+            "cluster": 0.00139
+          },
+          "total": 20.814667,
+          "wall": 20.841915
+        }
+      ],
+      "total_mean": 21.675829,
+      "total_std": 0.747862,
+      "total_min": 20.814667,
+      "total_max": 22.870491,
+      "stage_mean": {
+        "normalize": 3.807596,
+        "shingle": 5.534633,
+        "minhash": 12.190644,
+        "lsh": 0.086799,
+        "candidates": 0.023527,
+        "verify": 0.031201,
+        "cluster": 0.00143
+      },
+      "stage_std": {
+        "normalize": 0.130983,
+        "shingle": 0.205533,
+        "minhash": 0.431575,
+        "lsh": 0.013592,
+        "candidates": 0.003783,
+        "verify": 0.001406,
+        "cluster": 7.2e-05
+      },
+      "stage_share_pct": {
+        "normalize": 17.57,
+        "shingle": 25.53,
+        "minhash": 56.24,
+        "lsh": 0.4,
+        "candidates": 0.11,
+        "verify": 0.14,
+        "cluster": 0.01
+      },
+      "stats": {
+        "docs": 10000,
+        "empty_docs": 0,
+        "shingles": 8769488,
+        "buckets": 307370,
+        "max_bucket": 44,
+        "candidates": 3178,
+        "verified_pairs": 1081,
+        "clusters": 964,
+        "docs_in_clusters": 1989,
+        "sig_checksum": 2066815199,
+        "edge_checksum": 388838642
+      },
+      "accuracy": {
+        "true_pairs": 1058,
+        "predicted_pairs": 1089,
+        "correct_pairs": 1056,
+        "precision": 0.9696969696969697,
+        "recall": 0.998109640831758
+      }
+    },
+    {
+      "docs": 50000,
+      "repeats": 5,
+      "runs": [
+        {
+          "times": {
+            "normalize": 10.974344,
+            "shingle": 15.78751,
+            "minhash": 30.912256,
+            "lsh": 0.48282,
+            "candidates": 0.172384,
+            "verify": 0.263314,
+            "cluster": 0.015126
+          },
+          "total": 58.607755,
+          "wall": 58.717271
+        },
+        {
+          "times": {
+            "normalize": 10.828624,
+            "shingle": 15.7599,
+            "minhash": 30.95789,
+            "lsh": 0.505018,
+            "candidates": 0.17922,
+            "verify": 0.251081,
+            "cluster": 0.013251
+          },
+          "total": 58.494984,
+          "wall": 58.603491
+        },
+        {
+          "times": {
+            "normalize": 12.130814,
+            "shingle": 17.337019,
+            "minhash": 32.646482,
+            "lsh": 0.512809,
+            "candidates": 0.187938,
+            "verify": 0.246934,
+            "cluster": 0.013811
+          },
+          "total": 63.075808,
+          "wall": 63.20223
+        },
+        {
+          "times": {
+            "normalize": 11.230575,
+            "shingle": 16.106756,
+            "minhash": 31.319565,
+            "lsh": 0.501808,
+            "candidates": 0.183233,
+            "verify": 0.264798,
+            "cluster": 0.014591
+          },
+          "total": 59.621325,
+          "wall": 59.738564
+        },
+        {
+          "times": {
+            "normalize": 11.341995,
+            "shingle": 16.405534,
+            "minhash": 31.939511,
+            "lsh": 0.511922,
+            "candidates": 0.18229,
+            "verify": 0.269389,
+            "cluster": 0.012461
+          },
+          "total": 60.6631,
+          "wall": 60.781112
+        }
+      ],
+      "total_mean": 60.092594,
+      "total_std": 1.884426,
+      "total_min": 58.494984,
+      "total_max": 63.075808,
+      "stage_mean": {
+        "normalize": 11.30127,
+        "shingle": 16.279344,
+        "minhash": 31.555141,
+        "lsh": 0.502875,
+        "candidates": 0.181013,
+        "verify": 0.259103,
+        "cluster": 0.013848
+      },
+      "stage_std": {
+        "normalize": 0.50623,
+        "shingle": 0.647323,
+        "minhash": 0.735573,
+        "lsh": 0.012129,
+        "candidates": 0.005749,
+        "verify": 0.009597,
+        "cluster": 0.001057
+      },
+      "stage_share_pct": {
+        "normalize": 18.81,
+        "shingle": 27.09,
+        "minhash": 52.51,
+        "lsh": 0.84,
+        "candidates": 0.3,
+        "verify": 0.43,
+        "cluster": 0.02
+      },
+      "stats": {
+        "docs": 50000,
+        "empty_docs": 0,
+        "shingles": 25035096,
+        "buckets": 1535601,
+        "max_bucket": 144,
+        "candidates": 34382,
+        "verified_pairs": 26190,
+        "clusters": 4763,
+        "docs_in_clusters": 10112,
+        "sig_checksum": 1201702741,
+        "edge_checksum": 1907579621
+      },
+      "accuracy": {
+        "true_pairs": 5281,
+        "predicted_pairs": 28479,
+        "correct_pairs": 5278,
+        "precision": 0.1853295410653464,
+        "recall": 0.9994319257716342
+      }
+    },
+    {
+      "docs": 100000,
+      "repeats": 3,
+      "runs": [
+        {
+          "times": {
+            "normalize": 18.281108,
+            "shingle": 26.106013,
+            "minhash": 49.97809,
+            "lsh": 1.402168,
+            "candidates": 0.440693,
+            "verify": 0.372747,
+            "cluster": 0.023425
+          },
+          "total": 96.604244,
+          "wall": 96.801082
+        },
+        {
+          "times": {
+            "normalize": 21.020225,
+            "shingle": 30.087614,
+            "minhash": 57.154448,
+            "lsh": 1.393756,
+            "candidates": 0.431559,
+            "verify": 0.48504,
+            "cluster": 0.040778
+          },
+          "total": 110.613419,
+          "wall": 110.853047
+        },
+        {
+          "times": {
+            "normalize": 20.362432,
+            "shingle": 29.327061,
+            "minhash": 55.946433,
+            "lsh": 1.107084,
+            "candidates": 0.351042,
+            "verify": 0.320486,
+            "cluster": 0.026725
+          },
+          "total": 107.441263,
+          "wall": 107.670657
+        }
+      ],
+      "total_mean": 104.886309,
+      "total_std": 7.345753,
+      "total_min": 96.604244,
+      "total_max": 110.613419,
+      "stage_mean": {
+        "normalize": 19.887922,
+        "shingle": 28.506896,
+        "minhash": 54.359657,
+        "lsh": 1.301003,
+        "candidates": 0.407765,
+        "verify": 0.392758,
+        "cluster": 0.030309
+      },
+      "stage_std": {
+        "normalize": 1.429881,
+        "shingle": 2.113715,
+        "minhash": 3.84232,
+        "lsh": 0.167991,
+        "candidates": 0.049335,
+        "verify": 0.084082,
+        "cluster": 0.009215
+      },
+      "stage_share_pct": {
+        "normalize": 18.96,
+        "shingle": 27.18,
+        "minhash": 51.83,
+        "lsh": 1.24,
+        "candidates": 0.39,
+        "verify": 0.37,
+        "cluster": 0.03
+      },
+      "stats": {
+        "docs": 100000,
+        "empty_docs": 0,
+        "shingles": 46421163,
+        "buckets": 3074700,
+        "max_bucket": 144,
+        "candidates": 41077,
+        "verified_pairs": 31559,
+        "clusters": 9500,
+        "docs_in_clusters": 19923,
+        "sig_checksum": 4110645216,
+        "edge_checksum": 2075259818
+      },
+      "accuracy": {
+        "true_pairs": 10593,
+        "predicted_pairs": 33965,
+        "correct_pairs": 10586,
+        "precision": 0.3116737818342411,
+        "recall": 0.9993391862550741
+      }
+    }
+  ],
+  "complete": true,
+  "peak_memory_mb": 949,
+  "profile_docs": 10000,
+  "profile_text": "ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    10000    8.749    0.001   12.443    0.001 dedup.py:92(signature)\n  8922221    3.621    0.000    7.096    0.000 dedup.py:71(<genexpr>)\n    10000    2.956    0.000    2.956    0.000 {method 'outer' of 'numpy.ufunc' objects}\n    10000    2.497    0.000   14.488    0.001 dedup.py:61(shingles)\n  8912221    2.321    0.000    2.321    0.000 {method 'join' of 'str' objects}\n  8912221    2.115    0.000    2.115    0.000 {method 'encode' of 'str' objects}\n    10000    1.996    0.000    1.996    0.000 {method 'split' of 're.Pattern' objects}\n    10000    1.525    0.000    8.599    0.001 {built-in method numpy.fromiter}\n  8912223    1.361    0.000    1.361    0.000 {built-in method zlib.crc32}\n    20000    1.287    0.000    1.287    0.000 {method 'sub' of 're.Pattern' objects}\n        1    1.028    1.028   31.958   31.958 dedup.py:130(run_pipeline)\n    10000    0.731    0.000    0.731    0.000 {built-in method numpy._core._multiarray_umath._unique_hash}\n    10001    0.625    0.000    0.625    0.000 {method 'reduce' of 'numpy.ufunc' objects}\n    10000    0.302    0.000    0.302    0.000 {method 'lower' of 'str' objects}\n    10000    0.270    0.000    3.855    0.000 dedup.py:54(normalize)\n",
+  "elapsed_s": 771.1
+}
